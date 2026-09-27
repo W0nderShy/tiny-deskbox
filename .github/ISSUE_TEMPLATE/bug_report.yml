@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible Tiny DeskBox problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Tiny DeskBox. Remove private file names and personal paths from logs and screenshots.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: List exact steps beginning from a known state.
+      placeholder: |
+        1. Start Tiny DeskBox
+        2. Create or open...
+        3. Drag or click...
+        4. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Tiny DeskBox version or commit
+      placeholder: Commit SHA or release version
+    validations:
+      required: true
+  - type: textarea
+    id: display
+    attributes:
+      label: Display configuration
+      description: Include monitor count, scaling, and arrangement when relevant.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or sanitized logs
+      description: Do not include private documents, file names, account details, or personal paths.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for this problem.
+          required: true
+        - label: I removed private information from attached evidence.
+          required: true

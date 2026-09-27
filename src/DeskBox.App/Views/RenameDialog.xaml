@@ -1,0 +1,26 @@
+<Window x:Class="DeskBox.App.Views.RenameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="重命名" Height="140" Width="320"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="{StaticResource DeskBox.SurfaceBrush}"
+        Foreground="{StaticResource DeskBox.TextPrimaryBrush}">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="盒子名称" Margin="0,0,0,8"/>
+        <TextBox x:Name="NameBox" Grid.Row="1" VerticalContentAlignment="Center"
+                 Background="{StaticResource DeskBox.TitleBarBrush}"
+                 Foreground="{StaticResource DeskBox.TextPrimaryBrush}"
+                 BorderBrush="{StaticResource DeskBox.BorderBrush}"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,12,0,0">
+            <Button Content="确定" Width="72" Margin="0,0,8,0" IsDefault="True" Click="Ok_Click"
+                    Style="{StaticResource DeskBox.TitleButton}"/>
+            <Button Content="取消" Width="72" IsCancel="True"
+                    Style="{StaticResource DeskBox.TitleButton}"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>DeskBox</AssemblyName>
+    <RootNamespace>DeskBox.App</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DeskBox.Core\DeskBox.Core.csproj" />
+    <ProjectReference Include="..\DeskBox.Shell\DeskBox.Shell.csproj" />
+  </ItemGroup>
+</Project>

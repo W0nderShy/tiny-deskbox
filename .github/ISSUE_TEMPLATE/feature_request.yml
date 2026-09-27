@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a focused improvement for Tiny DeskBox
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the desktop workflow that is difficult today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed workflow
+      description: Explain how the feature should behave from the user's point of view.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe workarounds or simpler approaches you considered.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and trade-offs
+      description: Note effects on simplicity, local storage, safety, or compatibility.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for a similar request.
+          required: true
+        - label: This request keeps Tiny DeskBox focused on desktop organization.
+          required: true
